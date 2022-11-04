@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bodega</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table width="100%" id="tiensig">
+        <tbody>
+          <tr>
+            <td width="37%">&nbsp;</td>
+            <td width="15%"><div id="tienda">tienda</div></td>
+            <td width="1%">&nbsp;</td>
+            <td width="32%"><div id="conocenos">conocenos</div></td>
+            <td width="15%">&nbsp;</td>
+          </tr>
+        </tbody>
+</table>
+	
+	
+<div class="seleccionidiomaabajo">
+  <button class="seleccionidioma"> Idioma </button>
+  <div class="seleccionidiomaabajo-content">
+    <a href="index2.html">Epaañol</a>
+    <a href="en/en.html">English</a>
+  </div>
+</div>
+	
+	
+	<ul id="menu">
+   <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">Nivel 1</label>
+   <ul class="interior">
+         <li><input type="checkbox" name="list" id="nivel2-1"><label for="nivel2-1">Nivel 2</label>
+           <ul class="interior">
+             <li><a href="#r">Nivel 3</a></li>
+             <li><a href="#r">Nivel 3</a></li>
+            </ul>
+         </li>
+         <li><input type="checkbox" name="list" id="nivel2-2"><label for="nivel2-2">Nivel 2</label>
+           <ul class="interior">
+             <li><a href="#r">Nivel 3</a></li>
+             <li><a href="#r">Nivel 3</a></li>
+             <li><a href="#r">Nivel 3</a></li>
+             <li><a href="#r">Nivel 3</a></li>
+            </ul>
+         </li>
+         <li><a href="#r">Nivel 2</a></li>
+      </ul>
+   </li>
+   <li><input type="checkbox" name="list" id="nivel1-2" checked=""><label for="nivel1-2">Nivel 1</label>
+      <ul class="interior">
+         <li><a href="#r">Nivel 2</a></li>
+         <li><input type="checkbox" name="list" id="nivel2-3"><label for="nivel2-3">Nivel 2</label>
+           <ul class="interior">
+             <li><a href="#r">Nivel 3</a></li>
+             <li><a href="#r">Nivel 3</a></li>
+            </ul>
+         </li>
+         <li><input type="checkbox" name="list" id="nivel2-4"><label for="nivel2-4">Nivel 2</label>
+         <ul class="interior">
+             <li><a href="#r">Nivel 3</a></li>
+             <li><a href="#r">Nivel 3</a></li>
+             <li><a href="#r">Nivel 3</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href="#r">Nivel 1</a></li>
+</ul>
+
+	
+  <!-- Define the buttons that will 
+  change the language of the page 
+  and reload it -->
+  <button onclick="changeLanguage('eng')">
+    Change to English
+    </button>
+  <button onclick="changeLanguage('es')">
+    Change to Spanish
+  </button>
+  <button onclick="changeLanguage('hin')">
+    Change to Hindi
+  </button>  
+  <button onclick="changeLanguage('non')">
+    Change to non
+  </button>
+  <!-- Define the content of the page
+  that would be changed -->
+  <p id="siteContent">
+    Welcome to the GeeksforGeeks Portal! 
+    You can choose any language using the
+    buttons above!
+  </p>
+	<script>
+    // Create a function to change
+    // the hash value of the page
+    function changeLanguage(lang) {
+      location.hash = lang;
+      location.reload();
+    }
+  
+    // Define the language reload anchors
+    var language = {
+      es: {
+        welcome: "¡Puedes elegir cualquier idioma usando " +
+        "los botones de arriba!"
+      },
+      hin: {
+        welcome: "आप ऊपर दिए गए बटन का उपयोग करके किसी भी " + 
+        "भाषा को चुन सकते हैं!"
+      }	
+    };
+  
+    // Check if a hash value exists in the URL
+    if (window.location.hash) {
+  
+      // Set the content of the webpage 
+      // depending on the hash value
+      if (window.location.hash == "#es") {
+        siteContent.textContent =
+          language.es.welcome;
+      }
+      else if (window.location.hash == "#hin") {
+        siteContent.textContent =
+          language.hin.welcome;
+      }
+    }
+  </script>
+</body>
+</html>
