@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;1,400&family=Roboto:wght@300&display=swap');
 body {
     background-color: #000000;
     margin: 0px;
@@ -93,6 +94,7 @@ th a:active {
 }
 .seleccionidiomaabajo {
     position: relative;
+    font-size: 14px;
 }
 .seleccionidiomaabajo-content {
     width: 100%;
@@ -117,8 +119,8 @@ th a:active {
 /*estilos idioma*/
 
 #cab {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 24px;
+    font-family: 'Lora', serif;
+    font-size: 23px;
     color: #FFF;
     text-align: center;
     position: fixed;
@@ -131,6 +133,8 @@ th a:active {
     left: 0;
     right: 0;
     background-color: #000000;
+    font-style: normal;
+    font-weight: 900;
 }
 #main {
     background-color: #272727;
