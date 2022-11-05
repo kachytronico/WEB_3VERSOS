@@ -1,9 +1,18 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 body {
     background-color: #000000;
     margin: 0px;
     padding: 0px;
+}
+h2 {
+    font-size: 54px;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #000000;
 }
 .boton {
     position: fixed;
@@ -68,6 +77,7 @@ a:active {
 th a:link  {
     color: #FFFFFF;
     text-decoration: none;
+    bottom: 14%;
 }
 th a:visited {
     color: #FFFFFF;
@@ -94,7 +104,7 @@ th a:active {
 }
 .seleccionidiomaabajo {
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
 }
 .seleccionidiomaabajo-content {
     width: 100%;
@@ -103,7 +113,7 @@ th a:active {
     position: absolute;
     box-shadow: 0px 8px 16px 0px;
     padding-top: 6px;
-    margin-top: 12px;
+    margin-top: 5px;
 }
 .seleccionidiomaabajo-content a {
     padding-top: 2px;
@@ -119,8 +129,8 @@ th a:active {
 /*estilos idioma*/
 
 #cab {
-    font-family: 'Lato', sans-serif;
-    font-size: 23px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
     color: #FFF;
     text-align: center;
     position: fixed;
@@ -133,15 +143,23 @@ th a:active {
     left: 0;
     right: 0;
     background-color: #000000;
-    font-style: normal;
-    font-weight: 400;
+}
+.abajo {
+    padding-bottom: 8px;
+}
+.logo {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 200px;
 }
 #main {
     background-color: #272727;
     color: #FFFFFF;
 }
 #ipsum {
-    margin-top: 7em;
+    margin-top: 3em;
     padding-left: 22px;
     padding-right: 22px;
 }
@@ -151,7 +169,7 @@ th a:active {
     margin-bottom: 14px;
 }
 #contacto {
-	font-family: 'Lato', sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
 	font-size: 14px;
 	color: #FFF;
 	border: 2px solid #FFFFFF;
@@ -163,23 +181,92 @@ th a:active {
 #pie {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 }
+
+.oculto {
+    visibility: hidden;
+    margin: 0px;
+    padding-bottom: 48px;
+}
+
+/*estilos bodega*/
+
+.tbodega {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+.testobodegaiz {
+    margin-right: 6px;
+    margin-left: 48px;
+    text-align: left;
+}
+.testobodegade {
+    margin-right: 45px;
+    margin-left: 6px;
+    text-align: left;
+}
+.imagenbodega {
+    width: 350px;
+    height: 350px;
+}
+.imagenfecha {
+    width: 203px;
+    height: 350px;
+}
+/*estilos bodega*/
+
+/*estilos viñedo*/
+
+.imgvinedo {
+    width: 100%;
+}
+.textovinedo {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 24px;
+    padding-left: 24px;
+    text-align: center;
+    width: 100%;
+}
+/*estilos viñedo*/
+
+/*estilos vinos*/
+
+.botella {
+    width: 100%;
+}
+.colorbarra {
+    background-color: #90562A;
+}
+.colorbarra2 {
+    background-color: #BC8153;
+}
+.textobarra {
+    padding-top: 8px;
+    padding-right: 22px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+}
+.precio {
+    padding-top: 8px;
+    padding-right: 22px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/*estilos vinos*/
+
 .mapa   {
-    width: 96%;
+    width: 100%;
 }
 .padimg   {
     padding-left: 8px;
     padding-top: 1px;
     padding-right: 8px;
     padding-bottom: 4px;
-}
-.logo {
-    margin-top: 9px;
-    margin-bottom: 9px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 200px;
 }
 .padimgtop   {
     padding-left: 8px;
