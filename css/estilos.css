@@ -1,38 +1,42 @@
 @charset "utf-8";
 body {
-    background-color: #000000;
+    background-color: #272727;
     margin: 0px;
     padding: 0px;
 }
 
 .boton {
-    position: fixed;
     width: 100%;
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../img/vino.gif);
     text-align: center;
-    padding-top: 40%;
-    font-size: 69px;
-    font-weight: bolder;
+    padding-top: 48%;
+    font-size: 34px;
+    font-weight: 400;
+    font-family: raleway;
+    font-style: normal;
+    ;
 }
 .boton a {
     color: #FFFFFF;
     text-decoration: none;
     padding-left: 32px;
     padding-right: 32px;
+    background-color: rgba(99,96,96,0.54);
 }
 .boton a:link  {
     color: #FFFFFF;
     text-decoration: none;
 }
-.boton a:visited {
-    color: #E6BE55;
+.boton a:visited  {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .boton a:focus {
     color: #E3D1A4;
-    background: #FFE500;
+    background-color: rgba(193,185,112,0.53);
 }
 .boton a:hover {
     color: #E6BE55;
@@ -42,16 +46,18 @@ body {
     color: #FCDC97 !important;
 }
 
-
 h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 54px;
     text-align: center;
-    background-color: #FFFFFF;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 72px;
+    background-color: #272727;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 55px;
     margin-top: 0;
-    color: #000000;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
 }
 a {
 	padding-left: 2px;
@@ -106,17 +112,16 @@ th a:active {
 }
 .seleccionidiomaabajo {
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
 }
 .seleccionidiomaabajo-content {
     width: 100%;
     display: none;
     background-color: #000000;
     position: absolute;
-    box-shadow: 0px 2px 13px 0px;
+    box-shadow: 0px 8px 16px 0px;
     padding-top: 6px;
     margin-top: 5px;
-    -webkit-box-shadow: 0px 2px 13px 0px;
 }
 .seleccionidiomaabajo-content a {
     padding-top: 2px;
@@ -147,6 +152,7 @@ th a:active {
     right: 0;
     background-color: #000000;
     z-index: 155;
+    letter-spacing: 1px;
 }
 .abajo {
     padding-bottom: 8px;
@@ -160,26 +166,32 @@ th a:active {
 }
 
 #main {
-    background-color: #272727;
     color: #FFFFFF;
 }
 .oculto {
-    visibility: hidden;
-    margin: 0px;
+    margin: 0;
     padding-bottom: 48px;
-    width: 0px;
+	padding-top: 0;
+	width: 100%;
 }
 
 /*estilos texto*/
-#ipsum {
-    margin-top: 3em;
-    padding-left: 22px;
-    padding-right: 22px;
+#cita_cabezera {
+    margin-top: 1em;
     font-family: 'Raleway', sans-serif;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 900;
     text-align: center;
     font-size: 28px;
+    float: left;
+    margin-left: 26%;
+    background-image: -webkit-linear-gradient(340deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
+    background-image: -moz-linear-gradient(340deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
+    background-image: -o-linear-gradient(340deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
+    background-image: linear-gradient(110deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 7px;
 }
 /*estilos texto*/
 
@@ -187,13 +199,13 @@ th a:active {
 /*estilos bodega*/
 .testobodegaiz {
     margin-right: 6px;
-    margin-left: 48px;
-    text-align: left;
+    margin-left: 90px;
+    text-align: justify;
 }
 .testobodegade {
-    margin-right: 45px;
+    margin-right: 90px;
     margin-left: 6px;
-    text-align: left;
+    text-align: justify;
 }
 .imagenbodega {
     width: 350px;
@@ -213,11 +225,11 @@ th a:active {
     width: 100%;
 }
 .textovinedo {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 24px;
-    padding-left: 24px;
-    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 125px;
+    padding-left: 125px;
+    text-align: justify;
     width: 100%;
 }
 /*estilos viñedo*/
@@ -228,13 +240,13 @@ th a:active {
     width: 100%;
 }
 .botella {
-    width: 100%;
+    width: 80%;
 }
 .colorbarra {
-    background-color: #90562A;
+    background-color: #5F5E5E;
 }
 .colorbarra2 {
-    background-color: #BC8153;
+    background-color: #3B3B3B;
 }
 .textobarra {
     padding-top: 8px;
@@ -250,24 +262,23 @@ th a:active {
     text-align: center;
     font-size: 22px;
 }
-.proximamente {
-    background-color: rgba(188,129,83,0.5);
-    color: rgba(255,255,255,0.4);
-}
 .proximamentediv {
     text-align: center;
     float: left;
-    color: rgba(255,0,4,1.00);
+    color: rgba(234,234,234,1.00);
     font-size: 38px;
     position: absolute;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 35%;
     z-index: 68;
+    margin-top: 2%;
+    font-family: raleway;
+    font-style: normal;
+    font-weight: 600;
 }
 .proximamentebotella {
-    width: 100%;
-	opacity:0.6;
-	filter:alpha(opacity=40); /* For IE8 and earlier */
+    width: 80%;
+	opacity:0.2;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 /*estilos vinos*/
 
@@ -282,14 +293,13 @@ th a:active {
 
 /*estilos pie*/
 #contacto {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
-	color: #FFF;
-	border: 2px solid #FFFFFF;
-	margin-top: 5px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	margin-left: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    margin-top: 17px;
+    margin-right: 17px;
+    margin-bottom: 17px;
+    margin-left: 17px;
 }
 #pie {
     background-color: #000000;
@@ -304,7 +314,7 @@ th a:active {
 }
 .padimgtop   {
     padding-left: 8px;
-    padding-top: 5px;
+    padding-top: 4px;
     padding-right: 8px;
     padding-bottom: 4px;
 }
@@ -325,5 +335,56 @@ th a:active {
 /*estilos pie*/
 
 .center {
-	text-align: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/*diseños*/
+
+.parrafos {
+    font-family: 'Raleway', sans-serif;
+    line-height: 26px;
+}
+.pnegrita {
+    font-weight: bolder;
+    font-size: 26px;
+    padding-left: 10px;
+}
+.fondoblanco {
+    background-color: #FFFFFF;	
+}
+.fondonegro {
+    background-color: #000000;	
+}
+.textblanco {
+    color: #FFFFFF;	
+}
+.textnegro {
+    color: #000000;	
+}
+.fondogris {
+    background-color: #272727;
+}
+.ocultar {
+	
+}
+.logo_intro {
+    position: fixed;
+    padding-left: 36%;
+    background-size: 100%;
+    padding-top: 16px;
+}
+.logo_imagen_intro {
+    width: 40%;
+    background-image: -webkit-linear-gradient(11deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
+    background-image: -moz-linear-gradient(11deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
+    background-image: -o-linear-gradient(11deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
+    background-image: linear-gradient(79deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
+    border-radius: 10px;
+    text-shadow: 17px 31px 5px rgba(77,75,75,1.00);
+    padding-left: 11px;
+    padding-bottom: 11px;
+    padding-right: 11px;
+    padding-top: 11px;
 }
