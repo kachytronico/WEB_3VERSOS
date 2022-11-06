@@ -351,6 +351,10 @@ th a:active {
     font-size: 26px;
     padding-left: 10px;
 }
+.pcitapie {
+    font-size: 30px;
+    font-weight: bolder;
+}
 .fondoblanco {
     background-color: #FFFFFF;	
 }
