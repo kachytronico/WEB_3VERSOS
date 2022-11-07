@@ -1,59 +1,16 @@
 @charset "utf-8";
 body {
-    background-color: #272727;
+    background-color: #000000;
     margin: 0px;
     padding: 0px;
 }
-
-.boton {
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(../img/vino.gif);
-    text-align: center;
-    padding-top: 48%;
-    font-size: 34px;
-    font-weight: 400;
-    font-family: raleway;
-    font-style: normal;
-    ;
-}
-.boton a {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding-left: 32px;
-    padding-right: 32px;
-    background-color: rgba(99,96,96,0.54);
-}
-.boton a:link  {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.boton a:visited  {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.boton a:focus {
-    color: #E3D1A4;
-    background-color: rgba(193,185,112,0.53);
-}
-.boton a:hover {
-    color: #E6BE55;
-}
-.boton a:active {
-    background-color: #A78C62;
-    color: #FCDC97 !important;
-}
-
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 54px;
     text-align: center;
-    background-color: #272727;
-    padding-top: 40px;
+    padding-top: 61px;
     padding-bottom: 0px;
-    margin-bottom: 55px;
+    margin-bottom: 42px;
     margin-top: 0;
     color: #FFFFFF;
     font-style: normal;
@@ -69,37 +26,34 @@ a:link {
 	color: #FFFFFF;
 }
 a:visited {
-	color: #DEF9C7;
+	color: #FFFFFF;
 }
 a:focus {
-	color: #5C5C5C;
-	background: #FFE500;
+    color: #000000;
 }
 a:hover {
-	color: #FFE500;
+    color: #F3E88A;
 }
 a:active {
-	background-color: #FFFFFF;
-	color: #FF0000 !important;
+    color: rgba(167,140,98,0.00) !important;
 }
 th a:link  {
     color: #FFFFFF;
     text-decoration: none;
-    bottom: 14%;
+    bottom: 20%;
 }
 th a:visited {
     color: #FFFFFF;
 }
 th a:focus {
     color: #E3D1A4;
-    background: #FFE500;
 }
 th a:hover {
     color: #E6BE55 !important;
 }
 th a:active {
-    background-color: #A78C62;
-    color: #FCDC97 !important;
+    background-color: rgba(167,140,98,0.00);
+    color: #E6BE55 !important;
 }
 
 /*estilos idioma*/
@@ -136,9 +90,10 @@ th a:active {
 
 /*estilos idioma*/
 
+/*estilos cabecera*/
 #cab {
     font-family: 'Raleway', sans-serif;
-    font-size: 31px;
+    font-size: 30px;
     color: #FFFFFF;
     text-align: center;
     position: fixed;
@@ -153,18 +108,23 @@ th a:active {
     background-color: #000000;
     z-index: 155;
     letter-spacing: 1px;
+    border-bottom-color: rgba(247,247,247,0.31);
+    border-bottom-style: outset;
 }
 .abajo {
-    padding-bottom: 8px;
+    vertical-align: bottom;
+    text-align: center;
+    padding-bottom: 17px;
 }
 .logo {
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 5px;
     margin-right: 5px;
-    width: 200px;
+    width: 250px;
 }
-
+/*estilos cabecera*/
+/*estilos main*/
 #main {
     color: #FFFFFF;
 }
@@ -174,38 +134,62 @@ th a:active {
 	padding-top: 0;
 	width: 100%;
 }
-
-/*estilos texto*/
+/* proporción 16:9 */
+.video {
+    width: 100%;
+    height: auto;
+}
+.v-container {
+	position: relative;
+	padding-bottom: 56.25%; 
+	padding-top: 25px;
+	height: 0;	
+}
+.v-container iframe {
+    position: absolute;
+    top: -52px;
+    left: 0;
+    width: 100%;
+    border: 0;
+    height: 100%;
+}
 #cita_cabezera {
-    margin-top: 1em;
+    position: absolute;
+	top: 13%;
+	left: 50%;
+	transform: translate(-50%, -50%);
     font-family: 'Raleway', sans-serif;
     font-style: italic;
     font-weight: 900;
     text-align: center;
     font-size: 28px;
     float: left;
-    margin-left: 26%;
     background-image: -webkit-linear-gradient(340deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
     background-image: -moz-linear-gradient(340deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
     background-image: -o-linear-gradient(340deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
     background-image: linear-gradient(110deg,rgba(100,99,99,0.52) 0%,rgba(161,161,161,1.00) 100%);
     border-radius: 10px;
-    padding-right: 15px;
+    padding-right: 7px;
     padding-left: 7px;
+    z-index: 97;
 }
-/*estilos texto*/
-
-
 /*estilos bodega*/
+#bodegat{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 .testobodegaiz {
-    margin-right: 6px;
-    margin-left: 90px;
-    text-align: justify;
+    margin-right: 50px;
+    margin-left: 120px;
+    text-align: left;
+    line-height: normal;
+    letter-spacing: 0%;
 }
 .testobodegade {
-    margin-right: 90px;
-    margin-left: 6px;
-    text-align: justify;
+    margin-right: 140px;
+    margin-left: 50px;
+    text-align: left;
+    line-height: normal;
 }
 .imagenbodega {
     width: 350px;
@@ -215,6 +199,13 @@ th a:active {
     width: 203px;
     height: 350px;
 }
+.td_lados {
+    width: 50%;	
+}
+.td_centro {
+    width: 203px;	
+}
+
 /*estilos bodega*/
 
 /*estilos viñedo*/
@@ -235,9 +226,23 @@ th a:active {
 /*estilos viñedo*/
 
 /*estilos vinos*/
-
 #vinost {
-    width: 100%;
+    width: 84%;
+    padding-left: 18%;
+}#contenedorPadre_proximamente1 {
+  position: relative;
+}
+#contenedorPadre_proximamente2 {
+  position: relative;
+}
+#contenedorPadre_proximamente3 {
+  position: relative;
+}
+.td_botella {
+    width: 30%;	
+}
+.td_texto {
+    width: 70%;	
 }
 .botella {
     width: 80%;
@@ -263,14 +268,12 @@ th a:active {
     font-size: 22px;
 }
 .proximamentediv {
-    text-align: center;
-    float: left;
+    position: absolute;
+    top: 42%;
+    left: 24%;
     color: rgba(234,234,234,1.00);
     font-size: 38px;
-    position: absolute;
-    margin-left: 35%;
     z-index: 68;
-    margin-top: 2%;
     font-family: raleway;
     font-style: normal;
     font-weight: 600;
@@ -282,16 +285,95 @@ th a:active {
 }
 /*estilos vinos*/
 
+/*estilos formulario*/
+#tablaformulario {
+    width: 100%;
+    position: relative;
+    margin-top: 358px;
+    margin-bottom: 316px;
+    border-bottom-color: rgba(249,249,249,1.00);
+}
+#tform {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    width: 70%;
+}
+#comprar_formulario {
+    position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*estilos formulario*/
+.formulario {
+    width: 100%;
+    margin: auto;
+    padding-top: 70px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    border-radius: 24px;
+}
+.pedido {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -28px;
+}
+.formulario__imput, formulario__label, .formulario__submit {
+	display: block;
+	width: 95%;
+	color: white;
+}
+.formulario__imput {
+    padding: 20px;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgba(13,13,13,0.30);
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+.formulario__imput:focus {
+	outline: 1px solid rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.0.8);
+}
+.formulario__imput:focus + .formulario__label{
+}
+.formulario__label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -131px;
+    border-radius: 19px;
+}
+.formulario__submit {
+    width: 120px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 19px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+
 /*estilos mapa*/
 #mapa   {
     width: 100%;
 }
 .mapa   {
-    width: 106%;
+    width: 100%;
 }
 /*estilos mapa*/
 
 /*estilos pie*/
+.td_lado {
+    width: 25%;	
+}
+.td_pcentro {
+    width: 50%;	
+}
 #contacto {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 14px;
@@ -300,11 +382,13 @@ th a:active {
     margin-right: 17px;
     margin-bottom: 17px;
     margin-left: 17px;
+    width: 100%;
 }
 #pie {
     background-color: #000000;
     color: #FFFFFF;
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    width: 100%;
 }
 .padimg   {
     padding-left: 8px;
@@ -324,27 +408,25 @@ th a:active {
 	padding-right: 8px;
 	padding-bottom: 8px;
 }
-.img   {
-    margin-left: 7px;
-    margin-right: 7px;
+.img {
+    width: 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .pada {
-	padding-left: 5px;
-	padding-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 /*estilos pie*/
 
-.center {
-    text-align: center;
-    padding-bottom: 10px;
-}
 
-
-/*diseños*/
-
+/*Cambio de diseños*/
 .parrafos {
-    font-family: 'Raleway', sans-serif;
-    line-height: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
 }
 .pnegrita {
     font-weight: bolder;
@@ -354,6 +436,7 @@ th a:active {
 .pcitapie {
     font-size: 30px;
     font-weight: bolder;
+    padding-bottom: 20px;
 }
 .fondoblanco {
     background-color: #FFFFFF;	
@@ -371,24 +454,8 @@ th a:active {
     background-color: #272727;
 }
 .ocultar {
-	
+    color: rgba(240,248,255,0.00);
 }
-.logo_intro {
-    position: fixed;
-    padding-left: 36%;
-    background-size: 100%;
-    padding-top: 16px;
-}
-.logo_imagen_intro {
-    width: 40%;
-    background-image: -webkit-linear-gradient(11deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
-    background-image: -moz-linear-gradient(11deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
-    background-image: -o-linear-gradient(11deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
-    background-image: linear-gradient(79deg,rgba(39,39,39,1.00) 0.10%,rgba(21,20,20,0.99) 1.09%,rgba(72,72,72,0.82) 53.72%,rgba(62,60,61,1.00) 100%);
-    border-radius: 10px;
-    text-shadow: 17px 31px 5px rgba(77,75,75,1.00);
-    padding-left: 11px;
-    padding-bottom: 11px;
-    padding-right: 11px;
-    padding-top: 11px;
+.center {
+    text-align: center;
 }
